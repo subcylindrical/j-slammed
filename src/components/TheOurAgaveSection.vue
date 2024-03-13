@@ -33,5 +33,6 @@ export default {
 
 <style scoped>
 section {
+  padding-bottom: var(--section-bottom-padding);
 }
 </style>

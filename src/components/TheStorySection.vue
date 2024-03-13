@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
 section {
-  padding-bottom: 12.56rem;
+  padding-bottom: var(--section-bottom-padding);
 }
 
 img {

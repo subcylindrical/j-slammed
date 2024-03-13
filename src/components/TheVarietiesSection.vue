@@ -46,11 +46,9 @@ export default {
 
 <style scoped>
 section > div {
-  display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  justify-content: start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0 calc(var(--content-margin-left) / 2);
-  height: 1046px;
+  height: 88.87rem;
 }
 </style>

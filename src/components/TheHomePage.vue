@@ -5,6 +5,7 @@
   <horizontal-banner>{{ bannerContent1 }}</horizontal-banner>
   <TheOurAgaveSeciton />
   <TheVarietiesSection />
+  <TheTerminologySection />
 </template>
 
 <script>
@@ -13,6 +14,7 @@ import TheStorySection from './TheStorySection';
 import TheGrowSection from './TheGrowSection';
 import TheOurAgaveSeciton from './TheOurAgaveSection';
 import TheVarietiesSection from './TheVarietiesSection.vue';
+import TheTerminologySection from './TheTerminologySection.vue';
 
 export default {
   components: {
@@ -21,6 +23,7 @@ export default {
     TheGrowSection,
     TheOurAgaveSeciton,
     TheVarietiesSection,
+    TheTerminologySection,
   },
   data() {
     return {

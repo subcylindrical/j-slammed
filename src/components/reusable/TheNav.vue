@@ -22,20 +22,22 @@ export default {
   top: 0;
 }
 
-#menu {
+button {
+  font-weight: 900;
   margin: 2rem;
+  border: none;
+}
+
+#menu {
   padding: 0.8rem 4.5rem;
   border-radius: 0;
-  border: none;
   float: right;
   color: var(--green-primary);
 }
 
 .link-button {
-  margin: 2rem;
   background: none;
-  border: none;
   color: var(--font-light);
-  backdrop-filter: invert(1);
+  /* backdrop-filter: invert(1); */
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="variety-container">
-    <span>{{ type }}</span>
+    <span class="sub-heading">{{ type }}</span>
     <img :src="image" :alt="type" />
     <p>{{ description }}</p>
   </div>
@@ -24,9 +24,24 @@ div {
   /* flex-shrink: 0; */
 }
 
+p {
+  padding: 2.3rem 4.6rem;
+  text-align: center;
+}
+
+span {
+  margin: 2.3rem;
+}
+
 img {
   width: 100%;
-  height: 75%;
+  min-height: 75%;
   object-fit: cover;
+  border: var(--border-width) solid black;
+}
+
+.variety-container:nth-of-type(2) img {
+  border-left: none;
+  border-right: none;
 }
 </style>

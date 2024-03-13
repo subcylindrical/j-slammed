@@ -25,6 +25,7 @@ export default {
   --content-margin-top: 1.5rem;
   --border-width: 2px;
   --header-letter-spacing: 0.2rem;
+  --section-bottom-padding: 12.56rem;
   font-size: calc(0.35rem + 0.35vw);
   color: var(--font-dark);
 }
@@ -68,7 +69,8 @@ button::-moz-focus-inner,
 p {
   margin: 0;
   line-height: 131%;
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
+  font-size: 1.6rem;
 }
 
 a {
@@ -100,8 +102,9 @@ h2 {
 .sub-heading {
   letter-spacing: 0.05rem;
   font-size: 1.95rem;
-  font-weight: 900;
+  font-weight: 700;
   font-stretch: condensed;
+  text-transform: uppercase;
 }
 
 .content-section {
