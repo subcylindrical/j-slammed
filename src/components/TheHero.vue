@@ -1,6 +1,6 @@
 <template>
   <section id="hero">
-    <div>NAV</div>
+    <TheNav />
     <h1>California<br />Agave Farmers</h1>
     <img
       src="../assets/images/hero-image.png"
@@ -8,11 +8,12 @@
       class="hero-image"
     />
     <p>
-      <number-badge>1</number-badge>
+      <number-badge theme="light">1</number-badge>
       We are a family owned and operated agave farm based on 11 acres in
       Murrieta, California,
     </p>
     <p>
+      <number-badge theme="light">2</number-badge>
       founded by Leo and Sharla Ortega in 2013 when Sharla wanted to plant
       drought tolerant Americana agaves.
     </p>
@@ -20,10 +21,10 @@
 </template>
 
 <script>
-import NumberBadge from './reusable/NumberBadge.vue';
+import TheNav from './reusable/TheNav.vue';
 
 export default {
-  components: { NumberBadge },
+  components: { TheNav },
   data() {
     return {};
   },
@@ -33,11 +34,13 @@ export default {
 
 <style scoped>
 section {
+  position: relative;
   height: 100vh;
   background-color: var(--green-primary);
   display: grid;
-  grid-template-columns: 1fr 70rem 1fr;
-  grid-template-rows: min-content 1fr 0.1fr;
+  grid-template-columns: 1fr min(75rem, 55vw) 1fr;
+  grid-template-rows: min-content min-content 1fr;
+  border: var(--border-width) solid var(--tan);
 }
 
 h1 {
@@ -48,6 +51,7 @@ h1 {
   font-size: 8rem;
   color: var(--tan);
   align-self: end;
+  letter-spacing: var(--header-letter-spacing);
 }
 
 img {
@@ -55,6 +59,18 @@ img {
   grid-column: 2;
   width: 100%;
   border-radius: 78px;
+}
+
+p {
+  max-width: 25rem;
+  color: var(--font-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-self: center;
+  font-size: 2rem;
+  padding-bottom: 30%;
 }
 
 p:nth-of-type(1) {
