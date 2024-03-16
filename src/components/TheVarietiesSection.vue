@@ -49,6 +49,6 @@ section > div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 calc(var(--content-margin-left) / 2);
-  height: 88.87rem;
+  padding-bottom: var(--section-bottom-padding);
 }
 </style>

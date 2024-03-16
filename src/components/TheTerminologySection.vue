@@ -79,6 +79,7 @@ export default {
 <style scoped>
 section {
   border-top: var(--border-width) solid var(--green-primary);
+  margin-bottom: var(--section-bottom-padding);
 }
 
 .content-section {

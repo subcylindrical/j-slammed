@@ -26,6 +26,7 @@ export default {
   --border-width: 2px;
   --header-letter-spacing: 0.2rem;
   --section-bottom-padding: 12.56rem;
+  --drop-shadow-filter: drop-shadow(10px 14px 29px #000000);
   font-size: calc(0.35rem + 0.35vw);
   color: var(--font-dark);
 }
@@ -66,7 +67,8 @@ button::-moz-focus-inner,
   background: #d73e67b1;
 }
 
-p {
+p,
+li {
   margin: 0;
   line-height: 131%;
   /* font-size: 1.7rem; */
@@ -75,6 +77,14 @@ p {
 
 a {
   text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 141%;
 }
 
 a:visited {
@@ -94,6 +104,10 @@ h2 {
   color: var(--green-primary);
 }
 
+.medium-font {
+  font-size: 1.9rem;
+}
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -109,7 +123,7 @@ h2 {
 
 .content-section {
   margin-left: var(--content-margin-left);
-  margin-top: var(--content-margin-top);
+  padding-top: var(--content-margin-top);
   display: flex;
   flex-direction: row;
   align-items: start;

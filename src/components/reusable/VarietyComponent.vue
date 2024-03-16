@@ -35,7 +35,7 @@ span {
 
 img {
   width: 100%;
-  min-height: 75%;
+  height: 67.9rem;
   object-fit: cover;
   border: var(--border-width) solid black;
 }

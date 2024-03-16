@@ -18,8 +18,8 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 43px;
-  height: 43px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100%;
   margin-bottom: 16px;
 }

@@ -6,6 +6,9 @@
   <TheOurAgaveSeciton />
   <TheVarietiesSection />
   <TheTerminologySection />
+  <TheTimelineSection />
+  <TheFaqSection />
+  <TheFooter />
 </template>
 
 <script>
@@ -15,6 +18,9 @@ import TheGrowSection from './TheGrowSection';
 import TheOurAgaveSeciton from './TheOurAgaveSection';
 import TheVarietiesSection from './TheVarietiesSection.vue';
 import TheTerminologySection from './TheTerminologySection.vue';
+import TheTimelineSection from './TheTimelineSection.vue';
+import TheFaqSection from './TheFaqSection.vue';
+import TheFooter from './TheFooter.vue';
 
 export default {
   components: {
@@ -24,6 +30,9 @@ export default {
     TheOurAgaveSeciton,
     TheVarietiesSection,
     TheTerminologySection,
+    TheTimelineSection,
+    TheFaqSection,
+    TheFooter,
   },
   data() {
     return {

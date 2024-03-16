@@ -7,12 +7,12 @@
       alt="J Slammed logo"
       class="hero-image"
     />
-    <p>
+    <p class="medium-font">
       <number-badge theme="light">1</number-badge>
       We are a family owned and operated agave farm based on 11 acres in
       Murrieta, California,
     </p>
-    <p>
+    <p class="medium-font">
       <number-badge theme="light">2</number-badge>
       founded by Leo and Sharla Ortega in 2013 when Sharla wanted to plant
       drought tolerant Americana agaves.
@@ -62,14 +62,13 @@ img {
 }
 
 p {
-  max-width: 25rem;
   color: var(--font-light);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   place-self: center;
-  font-size: 2rem;
+  max-width: 25rem;
   padding-bottom: 30%;
 }
 
