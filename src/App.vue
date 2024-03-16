@@ -26,7 +26,7 @@ export default {
   --border-width: 2px;
   --header-letter-spacing: 0.2rem;
   --section-bottom-padding: 12.56rem;
-  --drop-shadow-filter: drop-shadow(10px 14px 29px #000000);
+  --drop-shadow-filter: drop-shadow(10px 14px 29px #000000b4);
   font-size: calc(0.35rem + 0.35vw);
   color: var(--font-dark);
 }

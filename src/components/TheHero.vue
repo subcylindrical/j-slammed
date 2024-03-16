@@ -59,6 +59,7 @@ img {
   grid-column: 2;
   width: 100%;
   border-radius: 78px;
+  filter: var(--drop-shadow-filter);
 }
 
 p {
