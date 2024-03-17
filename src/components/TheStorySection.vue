@@ -38,6 +38,10 @@ section {
   padding-bottom: var(--section-bottom-padding);
 }
 
+.content-section {
+  padding-top: var(--primary-spacing);
+}
+
 img {
   width: 100%;
   height: 617px;

@@ -5,19 +5,21 @@
       <div class="contact-information">
         <div class="contact-block">
           <p class="sub-heading">linkedin</p>
-          <p class="contact-info">.../linkedin.com</p>
+          <a href="https://www.linkedin.com" class="contact-info"
+            >sharla-ortega</a
+          >
         </div>
         <div class="contact-block">
           <p class="sub-heading">email</p>
-          <p class="contact-info">.../linkedin.com</p>
+          <a class="contact-info">.../linkedin.com</a>
         </div>
         <div class="contact-block">
           <p class="sub-heading">phone</p>
-          <p class="contact-info">.../linkedin.com</p>
+          <a class="contact-info">.../linkedin.com</a>
         </div>
         <div class="contact-block">
           <p class="sub-heading">instagram</p>
-          <p class="contact-info">.../linkedin.com</p>
+          <a class="contact-info">.../linkedin.com</a>
         </div>
       </div>
     </div>

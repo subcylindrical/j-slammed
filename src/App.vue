@@ -9,7 +9,7 @@ export default {
 };
 </script>
 
-<style>
+<style rel="preload">
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap');
 
 :root {
@@ -22,7 +22,8 @@ export default {
   --light-stroke: var(--font-light);
   --button-shadow: #242424;
   --content-margin-left: 9.7rem;
-  --content-margin-top: 1.5rem;
+  --content-margin-top: 5rem;
+  --primary-spacing: 1.5rem;
   --border-width: 2px;
   --header-letter-spacing: 0.2rem;
   --section-bottom-padding: 12.56rem;
@@ -68,10 +69,10 @@ button::-moz-focus-inner,
 }
 
 p,
-li {
+li,
+a {
   margin: 0;
   line-height: 131%;
-  /* font-size: 1.7rem; */
   font-size: 1.6rem;
 }
 
