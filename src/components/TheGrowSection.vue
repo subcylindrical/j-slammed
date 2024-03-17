@@ -9,7 +9,7 @@
       </p>
       <primary-button>Learn more about<br />our agaves</primary-button>
     </div>
-    <img src="../assets/images/small-agaves.jpg" alt="" />
+    <img src="../assets/images/small-agaves.webp" alt="" />
   </section>
 </template>
 

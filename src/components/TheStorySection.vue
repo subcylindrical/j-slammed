@@ -1,6 +1,6 @@
 <template>
   <section>
-    <img src="../assets/images/leo-and-sharla.jpg" alt="" />
+    <img src="../assets/images/leo-and-sharla.webp" alt="" />
     <div class="content-section">
       <p class="content-paragraph">
         Leo and Sharla began their journey as agave growers long before they

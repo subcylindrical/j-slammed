@@ -3,7 +3,7 @@
     <div class="content-section vertical-section">
       <h2>Terminology</h2>
       <div class="terminology-grid">
-        <img src="../assets/images/terminology.jpg" alt="" />
+        <img src="../assets/images/terminology.webp" alt="" />
         <div class="empty"></div>
         <div class="empty"></div>
         <div class="empty"></div>

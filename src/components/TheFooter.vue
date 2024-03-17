@@ -22,7 +22,7 @@
       </div>
     </div>
     <img
-      src="../assets/images/footer-hillside.jpg"
+      src="../assets/images/footer-hillside.webp"
       alt="hillside of agave plants"
     />
   </section>

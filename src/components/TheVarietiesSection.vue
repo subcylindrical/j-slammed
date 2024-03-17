@@ -21,19 +21,19 @@ export default {
     return {
       varieties: [
         {
-          image: require('../assets/images/sotol.jpg'),
+          image: require('../assets/images/sotol.webp'),
           type: 'Sotol',
           description:
             ' Sotols are not an agave but produce agave spirit However, they are in the asparagus family and appear to look like an agave or yucca, and grow similarly. ',
         },
         {
-          image: require('../assets/images/americana.jpg'),
+          image: require('../assets/images/americana.webp'),
           type: 'Blue americana agave',
           description:
             'Blue Americana agave is known for its spiky and robust blue-green leaves. This agave species is notably cultivated in Mexico for the production of tequila. In California, this agave is used to produce agave spirits.',
         },
         {
-          image: require('../assets/images/tequilana.jpg'),
+          image: require('../assets/images/tequilana.webp'),
           type: 'Tequilana Agaves',
           description:
             'Tequilana Agaves have thick and fleshy succulent leaves that form a rosette shape. The  leaves are bluish-green in color and have pronounced spiky edges. Its central core, called the piña, is harvested for spirit production.',

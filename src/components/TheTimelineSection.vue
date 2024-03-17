@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="timeline-img-container">
-      <img src="../assets/images/hillside.png" alt="" />
+      <img src="../assets/images/hillside.webp" alt="" />
     </div>
   </section>
 </template>
