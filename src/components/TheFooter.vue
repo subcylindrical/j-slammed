@@ -15,7 +15,9 @@
         </div>
         <div class="contact-block">
           <p class="sub-heading">email</p>
-          <a class="contact-info">haveyoueverfound@gmail.com </a>
+          <a href="mailto:haveyoueverfound@gmail.com" class="contact-info"
+            >haveyoueverfound@gmail.com
+          </a>
         </div>
         <div class="contact-block">
           <p class="sub-heading">phone</p>
@@ -50,7 +52,8 @@ export default {
 
 <style scoped>
 section {
-  height: 100lvh;
+  min-height: 100lvh;
+  /* height: 100lvh; */
   display: flex;
   flex-direction: row;
   justify-content: stretch;
@@ -64,7 +67,7 @@ h2 {
 
 img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
 }
 

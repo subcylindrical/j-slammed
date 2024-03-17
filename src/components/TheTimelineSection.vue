@@ -106,9 +106,11 @@ export default {
 
 <style scoped>
 section {
-  height: 500lvh;
+  /* height: 500lvh; */
   position: relative;
   border-top: var(--border-width) solid var(--green-primary);
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 h2 {
@@ -123,6 +125,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
 }
 
 .timeline-img-container {
