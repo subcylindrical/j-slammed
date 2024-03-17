@@ -36,6 +36,7 @@ export default {
 section {
   position: relative;
   height: 100vh;
+  min-height: 800px;
   background-color: var(--green-primary);
   display: grid;
   grid-template-columns: 1fr min(75rem, 55vw) 1fr;
