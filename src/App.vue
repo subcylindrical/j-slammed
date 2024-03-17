@@ -1,4 +1,10 @@
 <template>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap"
+    rel="stylesheet"
+  />
   <router-view></router-view>
 </template>
 
@@ -9,8 +15,8 @@ export default {
 };
 </script>
 
-<style rel="preload">
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap');
+<style>
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap'); */
 
 :root {
   --green-primary: #3b463a;
