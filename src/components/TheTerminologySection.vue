@@ -109,7 +109,7 @@ section {
 
 img {
   max-width: 100%;
-  height: 100%;
+  align-self: stretch;
   object-fit: cover;
   grid-column-start: 2;
   grid-column-end: 3;
