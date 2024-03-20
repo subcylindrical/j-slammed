@@ -3,7 +3,7 @@
     <TheNav />
     <h1>California<br />Agave Farmers</h1>
     <img
-      src="../assets/images/logo2.webp"
+      src="../assets/images/logo5.webp"
       alt="J Slammed logo"
       class="hero-image"
     />
