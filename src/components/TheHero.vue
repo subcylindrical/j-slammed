@@ -3,7 +3,7 @@
     <TheNav />
     <h1>California<br />Agave Farmers</h1>
     <img
-      src="../assets/images/logo2.webp"
+      src="../assets/images/logo5.webp"
       alt="J Slammed logo"
       class="hero-image"
     />
@@ -43,6 +43,7 @@ section {
   grid-template-columns: 1fr min(75rem, 55vw) 1fr;
   grid-template-rows: min-content min-content 1fr;
   border: var(--border-width) solid var(--tan);
+  padding-bottom: 10vh;
 }
 
 h1 {
@@ -57,11 +58,15 @@ h1 {
 }
 
 img {
-  grid-row: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
   grid-column: 2;
-  width: 100%;
+  max-width: 100%;
+  place-self: start;
+  justify-self: center;
   border-radius: 78px;
   filter: var(--drop-shadow-filter);
+  max-height: 100%;
 }
 
 p {
