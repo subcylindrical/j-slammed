@@ -22,13 +22,15 @@ export default {
   /* --green-primary: #3b463a;
   --green-secondary: #012120;
   --tan: #fbf0e6; */
-  --green-primary: #0a82b4;
+  --green-primary: #3f98b3;
   --green-secondary: #006e9f;
   --tan: #fbf0e6;
   --font-dark: black;
   --font-light: white;
+  --heading-font: var(--font-dark)
   --dark-stroke: var(--font-dark);
   --light-stroke: var(--font-light);
+  --section-border: var(--font-dark);
   --button-shadow: #242424;
   --content-margin-left: 9.7rem;
   --content-margin-top: 5rem;
@@ -112,7 +114,7 @@ h5 {
 h2 {
   font-size: 4.8rem;
   letter-spacing: var(--header-letter-spacing);
-  color: var(--green-primary);
+  color: var(--heading-font);
 }
 
 .medium-font {

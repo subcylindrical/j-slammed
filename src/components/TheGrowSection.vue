@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 section {
-  border-top: var(--border-width) solid var(--green-primary);
+  border-top: var(--border-width) solid var(--section-border);
   display: flex;
   flex-direction: row;
 }
