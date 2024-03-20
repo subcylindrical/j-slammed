@@ -171,5 +171,6 @@ h2 {
 .construction-popup span {
   font-size: 4rem;
   font-weight: 900;
+  text-align: center;
 }
 </style>
