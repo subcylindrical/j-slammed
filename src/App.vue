@@ -55,6 +55,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--tan);
+  overflow-x: clip;
 }
 
 img {
