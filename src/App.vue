@@ -5,6 +5,9 @@
     href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap"
     rel="stylesheet"
   />
+  <div class="construction-popup">
+    <span>This page is currently under contruction</span>
+  </div>
   <router-view></router-view>
 </template>
 
@@ -152,5 +155,21 @@ h2 {
 .content-paragraph {
   width: 67rem;
   max-width: 42vw;
+}
+
+.construction-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+.construction-popup span {
+  font-size: 4rem;
+  font-weight: 900;
 }
 </style>
