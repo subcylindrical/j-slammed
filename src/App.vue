@@ -19,14 +19,9 @@ export default {
 /* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap'); */
 
 :root {
-  /* --green-primary: #3b463a;
+  --green-primary: #3b463a;
   --green-secondary: #012120;
   --tan: #fbf0e6;
-  --font-dark: black;
-  --font-light: white; */
-  --green-primary: #0896c8;
-  --green-secondary: #006e9f;
-  --tan: #e5e5e5;
   --font-dark: black;
   --font-light: white;
   --dark-stroke: var(--font-dark);
