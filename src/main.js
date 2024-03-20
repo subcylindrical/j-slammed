@@ -19,3 +19,4 @@ app.component('HorizontalBanner', HorizontalBanner);
 
 app.use(router);
 app.mount('#app');
+document.title = 'J SLAMMED';
