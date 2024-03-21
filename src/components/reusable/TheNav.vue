@@ -33,7 +33,7 @@ button {
   padding: 0.8rem 4.5rem;
   border-radius: 0;
   float: right;
-  color: var(--green-primary);
+  color: var(--secondary);
 }
 
 .link-button {

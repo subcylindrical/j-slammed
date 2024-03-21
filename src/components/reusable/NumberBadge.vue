@@ -25,12 +25,12 @@ div {
 }
 
 .light {
-  color: var(--green-primary);
-  background-color: var(--tan);
+  color: var(--font-light);
+  background-color: var(--primary);
 }
 
 .dark {
   color: var(--tan);
-  background-color: var(--green-primary);
+  background-color: var(--secondary);
 }
 </style>

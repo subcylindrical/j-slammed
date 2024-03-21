@@ -22,19 +22,17 @@ export default {
 /* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap'); */
 
 :root {
-  /* --green-primary: #3b463a;
-  --green-secondary: #012120;
-  --tan: #fbf0e6; */
-  --green-primary: #3f98b3;
-  --green-secondary: #006e9f;
-  --tan: #fbf0e6;
-  --font-dark: black;
+  --primary: #3f98b3;
+  --secondary: #8AA7A6;
+  --tan: #F1F1E8;
+  --black: black;
+  --font-dark: #323232;
   --font-light: white;
   --heading-font: var(--font-dark)
   --dark-stroke: var(--font-dark);
   --light-stroke: var(--font-light);
   --section-border: var(--font-dark);
-  --button-shadow: #242424;
+  --button-shadow: var(--font-dark);
   --content-margin-left: 9.7rem;
   --content-margin-top: 5rem;
   --primary-spacing: 1.5rem;
@@ -173,5 +171,6 @@ h2 {
   font-size: 4rem;
   font-weight: 900;
   text-align: center;
+  color: white;
 }
 </style>

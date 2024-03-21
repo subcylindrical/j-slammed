@@ -21,7 +21,6 @@ div {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  /* flex-shrink: 0; */
 }
 
 p {
@@ -37,7 +36,7 @@ img {
   width: 100%;
   height: 67.9rem;
   object-fit: cover;
-  border: var(--border-width) solid black;
+  border: var(--border-width) solid var(--font-dark);
 }
 
 .variety-container:nth-of-type(2) img {

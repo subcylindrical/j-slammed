@@ -62,7 +62,7 @@ button {
   letter-spacing: 1.25px;
   line-height: 131%;
   border: none;
-  background-color: var(--green-primary);
+  background-color: var(--secondary);
   color: var(--tan);
   padding: 1rem 2.12rem;
 }

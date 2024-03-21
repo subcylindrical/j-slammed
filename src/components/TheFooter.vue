@@ -21,7 +21,7 @@
         </div>
         <div class="contact-block">
           <p class="sub-heading">phone</p>
-          <a class="contact-info">123-456-789</a>
+          <a href="tel:123456789" class="contact-info">123-456-789</a>
         </div>
         <div class="contact-block">
           <p class="sub-heading">instagram</p>
@@ -57,7 +57,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: stretch;
-  background-color: var(--green-secondary);
+  background-color: var(--secondary);
   color: var(--tan);
 }
 
@@ -90,5 +90,12 @@ img {
 }
 
 .contact-info {
+  transition: transform 0.05s ease, color 0.05s ease, font-style 0.05s ease;
+}
+
+.contact-info:hover {
+  transform: translateX(0.5rem);
+  color: var(--font-dark);
+  font-style: italic;
 }
 </style>

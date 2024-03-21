@@ -136,7 +136,7 @@ export default {
 
 <style scoped>
 section {
-  background-color: var(--green-primary);
+  background-color: var(--font-dark);
 }
 
 h2 {
@@ -159,7 +159,7 @@ li {
 li:hover {
   /* padding-left: 0.5rem; */
   transform: translateX(0.5rem);
-  color: var(--green-secondary);
+  color: var(--secondary);
   font-style: italic;
 }
 
@@ -183,7 +183,7 @@ li:hover {
   justify-self: center;
   margin: 0 5rem 5rem 5rem;
   width: 39.9rem;
-  height: 69.4rem;
+  height: 62rem;
   background-color: var(--tan);
   display: flex;
   flex-direction: column;
