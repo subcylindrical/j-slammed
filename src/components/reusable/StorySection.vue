@@ -4,7 +4,8 @@
       <template v-slot:num>{{ story.number }}</template>
       {{ story.desc }}
     </story-block>
-    <img src="../../assets/images/footer-hillside.webp" alt="" />
+    <img :src="story.img" alt="" />
+    <!-- <img src="../../assets/images/story/dry-land.jpg" alt="" /> -->
   </div>
 </template>
 
@@ -22,12 +23,11 @@ export default {
 
 <style scoped>
 .story-section {
-  /* width: (100vw - 16px); */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: stretch; */
   height: 48vw;
+  border-bottom: var(--border-width) solid var(--section-border);
 }
 
 .reversed {
@@ -35,9 +35,10 @@ export default {
 }
 
 img {
-  /* max-width: calc(50vw - 8px); */
-  max-width: 50%;
+  max-width: calc(50% + 1px);
   object-fit: cover;
   overflow: clip;
+  border-left: var(--border-width) solid var(--section-border);
+  border-right: var(--border-width) solid var(--section-border);
 }
 </style>

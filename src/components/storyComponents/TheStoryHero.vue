@@ -27,6 +27,7 @@ section {
   height: 100lvh;
   /* min-height: 1000px; */
   background-color: var(--secondary);
+  border-bottom: var(--border-width) solid var(--section-border);
 }
 
 #image-container {
