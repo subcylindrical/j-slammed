@@ -1,6 +1,5 @@
 <template>
   <section id="hero">
-    <TheNav />
     <h1>California<br />Agave Farmers</h1>
     <img
       src="../assets/images/logo.webp"
@@ -21,10 +20,7 @@
 </template>
 
 <script>
-import TheNav from './reusable/TheNav.vue';
-
 export default {
-  components: { TheNav },
   data() {
     return {};
   },

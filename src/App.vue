@@ -5,16 +5,19 @@
     href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap"
     rel="stylesheet"
   />
-  <div class="construction-popup">
+  <!-- <div class="construction-popup">
     <span>This page is currently under contruction</span>
-  </div>
+  </div> -->
+  <TheNav />
   <router-view></router-view>
 </template>
 
 <script>
+import TheNav from './components/reusable/TheNav.vue';
+
 export default {
   name: 'App',
-  components: {},
+  components: { TheNav },
 };
 </script>
 
@@ -119,6 +122,8 @@ h2 {
   color: var(--heading-font);
 }
 
+
+
 .medium-font {
   font-size: 1.9rem;
 }
@@ -134,6 +139,10 @@ h2 {
   font-weight: 700;
   font-stretch: condensed;
   text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 900;
 }
 
 .content-section {

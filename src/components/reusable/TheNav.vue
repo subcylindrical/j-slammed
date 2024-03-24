@@ -1,9 +1,12 @@
 <template>
   <div id="nav">
-    <router-link to="/">
-      <button class="link-button sub-heading">J SLAMMED</button></router-link
-    >
-    <button class="sub-heading" id="menu">MENU</button>
+    <router-link class="sub-heading bold" to="/"> J SLAMMED</router-link>
+    <!-- <button class="sub-heading" id="menu">MENU</button> -->
+    <div class="menu-links">
+      <router-link to="/our-story" class="sub-heading menu-link"
+        >ABOUT</router-link
+      >
+    </div>
   </div>
 </template>
 
@@ -17,16 +20,15 @@ export default {
 
 <style scoped>
 #nav {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 10;
-}
-
-button {
-  font-weight: 900;
-  margin: 2rem;
-  border: none;
+  background-color: var(--font-dark);
+  color: var(--font-light);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
 #menu {
@@ -39,6 +41,12 @@ button {
 .link-button {
   background: none;
   color: var(--font-light);
-  /* backdrop-filter: invert(1); */
+}
+
+.menu-links {
+  display: inline-block;
+}
+
+.menu-link {
 }
 </style>
