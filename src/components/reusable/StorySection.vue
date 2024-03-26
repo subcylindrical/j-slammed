@@ -61,7 +61,8 @@ export default {
 }
 
 img {
-  max-width: calc(50% + 1px);
+  /* max-width: calc(50% + 1px); */
+  width: calc(50% + 1px);
   height: 120%; /* for parallax */
   object-position: center;
   position: relative;
