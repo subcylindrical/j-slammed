@@ -36,9 +36,8 @@ section {
   min-height: 75rem;
   background-color: var(--font-dark);
   display: grid;
-  grid-template-columns: 1fr min(75rem, 55vw) 1fr;
+  grid-template-columns: 1fr min(75rem, 40vw) 1fr;
   grid-template-rows: min-content min-content 1fr;
-  border: var(--border-width) solid var(--tan);
   padding-bottom: 10rem;
 }
 
@@ -73,7 +72,7 @@ p {
   justify-content: center;
   place-self: center;
   max-width: 25rem;
-  padding-bottom: 30%;
+  padding-top: 20%;
 }
 
 p:nth-of-type(1) {

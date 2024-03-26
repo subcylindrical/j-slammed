@@ -1,18 +1,47 @@
 <template>
-  <div class="banner">
-    <div class="details">
+  <div class="banner" ref="banner">
+    <div class="details" ref="bannerDetails">
       <span class="sub-heading">family-run</span>
       <span class="sub-heading">Murrieta, CA, <br />since 2013</span>
       <span class="sub-heading">family-run</span>
     </div>
     <img src="../../assets/images/story/logo-black.png" alt="" />
     <p>
-      A year after our land was first purchased in 2012 we began planting our
-      Blue Americana Agaves. We started with 50, but they quickly began to
-      multiply.
+      A year after we purchased our land in 2012 we began planting our Blue
+      Americana Agaves. We started with 50, but they quickly began to multiply.
     </p>
   </div>
 </template>
+
+<script>
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
+export default {
+  data() {
+    return {
+      tl: null,
+    };
+  },
+  mounted() {
+    this.tl = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: this.$refs.banner,
+          start: 'top bottom',
+          end: 'bottom center',
+          scrub: true,
+          ease: 'none',
+          markers: false,
+        },
+      })
+      .to(this.$refs.bannerDetails, {
+        width: '90rem',
+      });
+  },
+};
+</script>
 
 <style scoped>
 .banner {

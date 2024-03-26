@@ -1,5 +1,5 @@
 <template>
-  <div class="button-wrapper">
+  <router-link class="button-wrapper" to="/our-story">
     <button
       ref="btn"
       class="primary-button"
@@ -9,7 +9,7 @@
       <slot></slot>
     </button>
     <div ref="btnShad" class="button-shadow"></div>
-  </div>
+  </router-link>
 </template>
 
 <script>

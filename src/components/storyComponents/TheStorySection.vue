@@ -43,7 +43,7 @@ export default {
         {
           number: 3,
           desc: 'Luckily, Sharla had previously developed a central valley alfalfa field into a 5-acre oasis with drought tolerant plants and trees. The only problem she encountered were the frosty winters and improperly draining soil that prevented her from fulfilling her vision of planting an entire field of Blue Americana Agaves alongside jacarandas, corals, and other Southern California beauties. The La Cresta unincorporated hills of Murrieta would provide a gentle marine layer, steep slopes with proper drainage, ample sunshine, and the santa ana winds to nudge everything into taking root. With Sharla’s eye for the right plants and Leos green thumb, they began to create their own ecosystem.',
-          img: require('../../assets/images/story/dry-land.jpg'),
+          img: require('../../assets/images/story/plants.webp'),
         },
         {
           number: 4,

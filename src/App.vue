@@ -141,10 +141,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.bold {
-  font-weight: 900;
-}
-
 .content-section {
   margin-left: var(--content-margin-left);
   padding-top: var(--content-margin-top);
@@ -181,5 +177,9 @@ h2 {
   font-weight: 900;
   text-align: center;
   color: white;
+}
+
+.bold {
+  font-weight: 900 !important;
 }
 </style>
