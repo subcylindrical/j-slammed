@@ -1,7 +1,7 @@
 <template>
   <section>
     <div id="image-container">
-      <img src="../../assets/images/story/first.webp" alt="" ref="heroImg" />
+      <img src="../../assets/images/story/drone.webp" alt="" ref="heroImg" />
     </div>
     <div id="hero-content" ref="heroContent">
       <h1>Our Story</h1>

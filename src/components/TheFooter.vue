@@ -12,16 +12,27 @@
             rel="noopener noreferrer"
             >sharla-ortega</a
           >
+          <a
+            class="contact-info"
+            href="https://www.linkedin.com/in/leo-ortega-198225139/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >leo-ortega</a
+          >
         </div>
         <div class="contact-block">
           <p class="sub-heading">email</p>
           <a href="mailto:haveyoueverfound@gmail.com" class="contact-info"
             >haveyoueverfound@gmail.com
           </a>
+          <a href="mailto:agetro@gmail.com" class="contact-info"
+            >agetro@gmail.com
+          </a>
         </div>
         <div class="contact-block">
           <p class="sub-heading">phone</p>
-          <a href="tel:123456789" class="contact-info">123-456-789</a>
+          <a href="tel:9512184769" class="contact-info">S 951-218-4769</a>
+          <a href="tel:9518054136" class="contact-info">L 951-805-4136</a>
         </div>
         <div class="contact-block">
           <p class="sub-heading">instagram</p>
@@ -35,10 +46,12 @@
         </div>
       </div>
     </div>
-    <img
-      src="../assets/images/footer-hillside.webp"
-      alt="hillside of agave plants"
-    />
+    <div class="img-wrapper">
+      <img
+        src="../assets/images/green-hillside.webp"
+        alt="hillside of agave plants"
+      />
+    </div>
   </section>
 </template>
 
@@ -52,11 +65,11 @@ export default {
 
 <style scoped>
 section {
-  min-height: 100lvh;
+  /* height: 90lvh; */
   /* height: 100lvh; */
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: start;
   background-color: var(--secondary);
   color: var(--tan);
 }
@@ -65,14 +78,19 @@ h2 {
   color: var(--tan);
 }
 
+.img-wrapper {
+  flex-grow: 1;
+}
+
 img {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
+  flex-grow: 1;
   object-fit: cover;
 }
 
 .footer-content {
-  margin: var(--content-margin-top) var(--content-margin-left);
+  padding: var(--content-margin-top) var(--content-margin-left);
 }
 
 .contact-block {
