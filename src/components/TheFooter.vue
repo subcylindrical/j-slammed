@@ -47,10 +47,10 @@
       </div>
     </div>
     <div class="img-wrapper">
-      <img
+      <!-- <img
         src="../assets/images/green-hillside.webp"
         alt="hillside of agave plants"
-      />
+      /> -->
     </div>
   </section>
 </template>
@@ -58,15 +58,15 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      backgroundImg: require('../assets/images/green-hillside.webp'),
+    };
   },
 };
 </script>
 
 <style scoped>
 section {
-  /* height: 90lvh; */
-  /* height: 100lvh; */
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -79,15 +79,18 @@ h2 {
 }
 
 .img-wrapper {
+  /* height: 50%; */
   flex-grow: 1;
+  background-image: url('../assets/images/green-hillside.webp');
+  background-size: cover;
 }
 
-img {
+/* img {
   width: 100%;
   height: 100%;
   flex-grow: 1;
   object-fit: cover;
-}
+} */
 
 .footer-content {
   padding: var(--content-margin-top) var(--content-margin-left);
@@ -104,7 +107,7 @@ img {
   flex-direction: column;
   align-items: center;
   margin-top: var(--content-margin-left);
-  row-gap: var(--content-margin-left);
+  row-gap: calc(var(--content-margin-left));
 }
 
 .contact-info {
