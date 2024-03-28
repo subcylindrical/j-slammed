@@ -79,7 +79,6 @@ h2 {
 }
 
 .img-wrapper {
-  /* height: 50%; */
   flex-grow: 1;
   background-image: url('../assets/images/green-hillside.webp');
   background-size: cover;

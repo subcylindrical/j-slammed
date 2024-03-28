@@ -33,7 +33,7 @@ export default {
         {
           number: 1,
           desc: 'Leo and Sharla began their journey as agave growers long before they decided to produce agave spirit. They both grew up in the Central San Joaquin Valley, but their journey brought them to Southern California at different points in life. Leo has a background of mechanical engineering, and finance. Sharla is a 4 th generation farmer with a background in law and the culinary arts. One of the many things they have in common is that they both worked in agriculture and irrigation stores. Needless to say, they were always hyper aware of what plants or crops require more water.',
-          img: require('../../assets/images/story/leo-sharla.jpg'),
+          img: require('../../assets/images/story/new-leo-and-sharla.webp'),
         },
         {
           number: 2,
