@@ -40,13 +40,13 @@ export default {
         {
           question: 'What are some unique facts about agave?',
           answer:
-            'What are some unique facts about agave? Drought tolerant, fire resistant, prevents soil erosion, dry farming, high elevation, the stalk is cut to preserve the juice and sugars back into the pina. Once the stalk shoots up on our variety- the plant dies.',
+            'Drought tolerant, fire resistant, prevents soil erosion, dry farming, high elevation, the stalk is cut to preserve the juice and sugars back into the pina. Once the stalk shoots up on our variety- the plant dies.',
         },
         {
           question:
             'What have been peoples Responses when you tell them you are an agave farmer?',
           answer:
-            'What have been peoples Responses when you tell them you are an agave farmer? Generally, it starts with “What the hell and then a smile and they say, ‘tequila’ to which we respond, ‘agave spirit’. It is becoming more common, and they engage in more questions.',
+            'Generally, it starts with “What the hell and then a smile and they say, ‘tequila’ to which we respond, ‘agave spirit’. It is becoming more common, and they engage in more questions.',
         },
         {
           question: 'What other products are agave used in?',

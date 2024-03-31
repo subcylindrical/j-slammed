@@ -24,11 +24,11 @@ export default {
   data() {
     return {
       timeline: [
-        { date: '2012', event: 'La Cresta area of Murrieta land purchas' },
+        { date: '2012', event: 'La Cresta area of Murrieta land purchase' },
         {
           date: '2013',
           event:
-            'first 50 agaves were planted- they quickly started to multiply',
+            'First 50 agaves were planted- they quickly started to multiply',
         },
         {
           date: '2016',
@@ -44,23 +44,23 @@ export default {
         {
           date: '2021',
           event:
-            'agaves are maturing quickly and (march) J Slammed LLC is created to ready for harvest',
+            'Agaves are maturing quickly and (march) J Slammed LLC is created to ready for harvest',
         },
         {
           date: '2021',
           event:
-            'first Americana Quiote sprouts and is allowed to bloom for seed saving',
+            'First Americana Quiote sprouts and is allowed to bloom for seed saving',
         },
         {
           date: '2022',
           event:
-            'harvest of combined 2021 and 2022 pinas distilled with Shelter Distilling (October)',
+            'Harvest of combined 2021 and 2022 pinas distilled with Shelter Distilling (October)',
         },
         {
           date: '2022',
           event: '300 tequilanas purchased – awaiting transplant',
         },
-        { date: '2022', event: 'may harvest distilled with Ventura Spirits' },
+        { date: '2022', event: 'May harvest distilled with Ventura Spirits' },
         {
           date: '2022',
           event:
@@ -71,9 +71,8 @@ export default {
           date: '2022',
           event: 'October AB 2303 agave spirit labeling bill passed',
         },
-        { date: '2022', event: 'leo begins to process cooked agave on site' },
-        { date: '2022', event: 'leo begins to process cooked agave on site' },
-        { date: '2023', event: 'first sotols purchased for experimentation' },
+        { date: '2022', event: 'We begin to process cooked agave on site' },
+        { date: '2023', event: 'First sotols purchased for experimentation' },
         {
           date: '2023',
           event: 'Leo becomes a board member of the California agave council',
@@ -81,22 +80,22 @@ export default {
         {
           date: '2023',
           event:
-            'we attend the Agave symposium – official hosts of roundtable discussion and after party',
+            'We attend the Agave symposium – official hosts of roundtable discussion and after party',
         },
-        { date: '2023', event: 'applied for trademark of ESELO spirits' },
+        { date: '2023', event: 'Applied for trademark of ESELO spirits' },
         {
           date: '2023',
-          event: 'research and development phase of efficiency in processing',
+          event: 'Research and development phase of efficiency in processing',
         },
         {
           date: '2024',
-          event: 'attending public events to promote California Agave Spirits',
+          event: 'Attending public events to promote California Agave Spirits',
         },
         { date: '2024', event: '100 sotols purchased- awaiting transplant' },
         {
           date: '2024',
           event:
-            'anticipated launch of Agave spirits under the name ESELO Spirits with Joshua Tree Distilling',
+            'We are now working with Joshua Tree to develop the ESELO Agave Spirit',
         },
       ],
     };

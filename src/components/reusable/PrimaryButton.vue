@@ -58,6 +58,7 @@ export default {
 
 button {
   font-size: 17px;
+  font-size: 1.44rem;
   font-weight: 700;
   letter-spacing: 1.25px;
   line-height: 131%;

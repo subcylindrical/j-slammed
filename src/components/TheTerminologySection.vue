@@ -3,7 +3,9 @@
     <div class="content-section vertical-section">
       <h2>Terminology</h2>
       <div class="terminology-grid">
-        <img src="../assets/images/terminology.webp" alt="" />
+        <div class="img-wrapper">
+          <img src="../assets/images/terminology.webp" alt="" ref="parallax" />
+        </div>
         <div class="empty"></div>
         <div class="empty"></div>
         <div class="empty"></div>
@@ -69,9 +71,31 @@
 </template>
 
 <script>
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 export default {
   data() {
-    return {};
+    return {
+      tl: null,
+    };
+  },
+  methods: {},
+  mounted() {
+    this.tl = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: this.$refs.parallax,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+          ease: 'none',
+          markers: false,
+        },
+      })
+      .to(this.$refs.parallax, {
+        y: '20%',
+      });
   },
 };
 </script>
@@ -107,7 +131,7 @@ section {
   max-width: 26.7rem;
 }
 
-img {
+.img-wrapper {
   max-width: 100%;
   align-self: stretch;
   object-fit: cover;
@@ -115,7 +139,16 @@ img {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 6;
+  overflow: clip;
   border: var(--border-width) solid var(--font-dark);
+}
+
+img {
+  width: 100%;
+  height: 120%;
+  position: relative;
+  bottom: 20%;
+  object-fit: cover;
 }
 
 .empty:nth-of-type(1) {

@@ -182,4 +182,13 @@ h2 {
 .bold {
   font-weight: 900 !important;
 }
+
+@media (width < 950px) {
+  :root {
+    --content-margin-left: 4.85rem;
+  }
+  .content-paragraph {
+    /* max-width: 60vw */
+  }
+}
 </style>

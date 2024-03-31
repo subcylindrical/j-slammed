@@ -108,6 +108,7 @@ img {
   object-fit: cover;
   position: relative;
   z-index: 0;
+  object-position: 50% 0%;
 }
 
 h1 {

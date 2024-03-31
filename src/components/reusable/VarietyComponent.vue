@@ -1,16 +1,41 @@
 <template>
   <div class="variety-container">
     <span class="sub-heading">{{ type }}</span>
-    <img :src="image" :alt="type" />
+    <div class="img-wrapper" ref="parallaxContainer">
+      <img :src="image" :alt="type" ref="parallax" />
+    </div>
     <p>{{ description }}</p>
   </div>
 </template>
 
 <script>
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 export default {
   props: ['type', 'description', 'image'],
   data() {
-    return {};
+    return {
+      tl: null,
+    };
+  },
+  methods: {},
+  mounted() {
+    this.tl = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: this.$refs.parallaxContainer,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+          ease: 'none',
+          markers: false,
+        },
+      })
+      .to(this.$refs.parallax, {
+        y: '20%',
+      });
   },
 };
 </script>
@@ -32,14 +57,25 @@ span {
   margin: 2.3rem;
 }
 
-img {
+.img-wrapper {
   width: 100%;
   height: 67.9rem;
-  object-fit: cover;
+  overflow: clip;
   border: var(--border-width) solid var(--font-dark);
+  position: relative;
 }
 
-.variety-container:nth-of-type(2) img {
+img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  object-fit: cover;
+  position: relative;
+  bottom: 15%;
+  object-position: center center;
+}
+
+.variety-container:nth-of-type(2) .img-wrapper {
   border-left: none;
   border-right: none;
 }

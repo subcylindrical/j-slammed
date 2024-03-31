@@ -40,7 +40,7 @@ export default {
     fleshy leaves that are broad at the base and taper to a point, featuring a
     pale green to blue-green color. The margins of the leaves have regularly
     spaced teeth, which are often sharp, and each leaf typically culminates in a
-    sharp terminal spine. About 6 ft in diameter when mature.`,
+    sharp terminal spine. They are between 8 and 10 ft in diameter when mature.`,
     };
   },
 };

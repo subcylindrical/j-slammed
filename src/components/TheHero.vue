@@ -7,13 +7,11 @@
       class="hero-image"
     />
     <p class="medium-font">
-      <number-badge theme="light">1</number-badge>
       We are a family owned and operated agave farm based on 11 acres in
-      Murrieta, California,
+      Murrieta, California.
     </p>
     <p class="medium-font">
-      <number-badge theme="light">2</number-badge>
-      founded by Leo and Sharla Ortega in 2013 when Sharla wanted to plant
+      Founded by Leo and Sharla Ortega in 2013 when Sharla wanted to plant
       drought tolerant Americana agaves.
     </p>
   </section>
@@ -71,7 +69,7 @@ p {
   justify-content: center;
   place-self: center;
   max-width: 25rem;
-  padding-top: 20%;
+  padding-top: 30%;
 }
 
 p:nth-of-type(1) {
@@ -108,6 +106,7 @@ p:nth-of-type(2) {
   p {
     padding-left: 10px;
     padding-right: 10px;
+    place-self: start center;
   }
   p:nth-of-type(1) {
     grid-row: 3;

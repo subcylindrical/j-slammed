@@ -1,13 +1,15 @@
 <template>
   <section>
-    <img src="../assets/images/leo-and-sharla.webp" alt="" />
+    <div class="img-wrapper">
+      <img src="../assets/images/leo-and-sharla.webp" alt="" ref="parallax" />
+    </div>
     <div class="content-section">
       <p class="content-paragraph">
         Leo and Sharla began their journey as agave growers long before they
         decided to produce agave spirit. They both grew up in the Central San
         Joaquin Valley, but their journey brought them to Southern California at
-        different points in life. Leo has a background of mechanical
-        engineering, and finance. Sharla is a 4th generation farmer with a
+        different points in life. Leo is a Mechanical Engineer, MBA, with a
+        background in finance. Sharla is a 4th generation farmer with a
         background in law and the culinary arts. One of the many things they
         have in common is that they both worked in agriculture and irrigation
         stores. Needless to say, they were always hyper aware of what plants or
@@ -24,11 +26,29 @@
 <script>
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 gsap.registerPlugin(ScrollTrigger);
 export default {
   data() {
-    return {};
+    return {
+      tl: null,
+    };
+  },
+  methods: {},
+  mounted() {
+    this.tl = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: this.$refs.parallax,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+          ease: 'none',
+          markers: false,
+        },
+      })
+      .to(this.$refs.parallax, {
+        y: '20%',
+      });
   },
 };
 </script>
@@ -42,9 +62,18 @@ section {
   padding-top: var(--primary-spacing);
 }
 
-img {
+.img-wrapper {
   width: 100%;
   height: 617px;
+  overflow: clip;
+  border-bottom: var(--border-width) solid var(--section-border);
+}
+
+img {
+  width: 100%;
+  height: 120%;
+  position: relative;
+  bottom: 20%;
   object-fit: cover;
   object-position: 50% 55%;
 }

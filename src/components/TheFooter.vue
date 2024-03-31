@@ -46,12 +46,7 @@
         </div>
       </div>
     </div>
-    <div class="img-wrapper">
-      <!-- <img
-        src="../assets/images/green-hillside.webp"
-        alt="hillside of agave plants"
-      /> -->
-    </div>
+    <div class="img-wrapper"></div>
   </section>
 </template>
 
@@ -76,6 +71,7 @@ section {
 
 h2 {
   color: var(--tan);
+  text-align: center;
 }
 
 .img-wrapper {
