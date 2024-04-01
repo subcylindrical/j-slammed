@@ -10,6 +10,16 @@
             @click="showAnswer($event, index)"
           >
             {{ index }}. {{ faq.question }}
+            <div
+              class="drop-wrapper"
+              :class="{
+                open: dropDownIsShowing && index === currentAnswer,
+              }"
+            >
+              <p class="drop-down">
+                {{ faqs[index].answer }}
+              </p>
+            </div>
           </li>
         </ul>
         <div class="answer-card-container">
@@ -123,13 +133,32 @@ export default {
         },
       ],
       currentAnswer: 0,
+      window: {
+        width: 0,
+      },
+      dropDownIsShowing: false,
     };
   },
   methods: {
     showAnswer(e, index) {
-      console.log(index);
-      this.currentAnswer = index;
+      if (this.window.width < 880) {
+        if (this.currentAnswer == index) {
+          this.dropDownIsShowing = !this.dropDownIsShowing;
+          return;
+        }
+        this.currentAnswer = index;
+        this.dropDownIsShowing = true;
+      } else {
+        this.currentAnswer = index;
+      }
     },
+    handleResize() {
+      this.window.width = window.innerWidth;
+    },
+  },
+  mounted() {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
   },
 };
 </script>
@@ -154,13 +183,6 @@ li {
   display: inline-block;
   cursor: pointer;
   transition: transform 0.05s ease, color 0.05s ease, font-style 0.05s ease;
-}
-
-li:hover {
-  /* padding-left: 0.5rem; */
-  transform: translateX(0.5rem);
-  color: var(--secondary);
-  font-style: italic;
 }
 
 .faq-questions-container {
@@ -194,9 +216,74 @@ li:hover {
 .card-badge {
   align-self: end;
   margin: 40px;
+  margin-bottom: 0;
+  flex-shrink: 0;
 }
 
 .answer {
   margin: 49px;
+}
+
+.drop-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease-out;
+}
+
+.drop-down {
+  font-weight: 400;
+  overflow: hidden;
+  transition: margin 0.25s ease-out;
+}
+
+.open > .drop-down {
+  margin-top: 2.15rem;
+}
+
+.open {
+  grid-template-rows: 1fr;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  li:hover {
+    transform: translateX(0.5rem);
+    color: var(--secondary);
+    font-style: italic;
+  }
+  @media (width < 800px) {
+    li:hover {
+      color: var(--font-dark);
+    }
+  }
+}
+
+@media (width < 800px) {
+  .answer-card {
+    display: none;
+  }
+  .content-section {
+    padding-bottom: var(--content-margin-top);
+    margin-right: var(--content-margin-left);
+  }
+  p,
+  li {
+    font-size: 1.9rem;
+  }
+
+  li {
+    /* font-weight: 700; */
+    display: block;
+    width: 100%;
+    background-color: var(--primary);
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: var(--small-radius);
+  }
+}
+
+@media (width < 600px) {
+  .content-section {
+    margin: 0 calc(var(--content-margin-left) / 2);
+  }
 }
 </style>

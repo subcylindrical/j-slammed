@@ -69,4 +69,16 @@ img {
   bottom: 20%;
   object-fit: cover;
 }
+
+@media (width < 550px) {
+  section {
+    flex-direction: column-reverse;
+    margin-bottom: var(--content-margin-top);
+  }
+  .img-wrapper {
+    width: 100%;
+    padding-left: 0;
+    height: 50rem;
+  }
+}
 </style>

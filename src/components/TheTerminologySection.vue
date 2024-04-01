@@ -175,4 +175,33 @@ img {
   grid-row-start: 6;
   grid-row-end: 7;
 }
+@media (width < 950px) {
+  .content-section {
+    margin: 0;
+  }
+  h2 {
+    margin-left: var(--content-margin-left);
+  }
+}
+
+@media (width<550px) {
+  .terminology-grid {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(6, auto); */
+  }
+  .empty {
+    display: none;
+  }
+  .img-wrapper {
+    display: none;
+  }
+  .vertical-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    margin: 0;
+  }
+}
 </style>

@@ -79,4 +79,10 @@ img {
   border-left: none;
   border-right: none;
 }
+
+@media (width < 550px) {
+  .img-wrapper {
+    border: var(--border-width) solid var(--font-dark) !important;
+  }
+}
 </style>

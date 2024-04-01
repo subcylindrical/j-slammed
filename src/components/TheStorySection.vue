@@ -64,7 +64,7 @@ section {
 
 .img-wrapper {
   width: 100%;
-  height: 617px;
+  height: 50rem;
   overflow: clip;
   border-bottom: var(--border-width) solid var(--section-border);
 }
@@ -76,5 +76,10 @@ img {
   bottom: 20%;
   object-fit: cover;
   object-position: 50% 55%;
+}
+@media (width < 950px) {
+  img {
+    object-position: right 55%;
+  }
 }
 </style>

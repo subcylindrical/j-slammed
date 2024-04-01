@@ -42,6 +42,7 @@ export default {
   --border-width: 2px;
   --header-letter-spacing: 0.2rem;
   --section-bottom-padding: 12.56rem;
+  --small-radius: 0.5rem;
   --drop-shadow-filter: drop-shadow(10px 14px 29px #000000b4);
   font-size: calc(0.35rem + 0.35vw);
   color: var(--font-dark);
@@ -188,7 +189,31 @@ h2 {
     --content-margin-left: 4.85rem;
   }
   .content-paragraph {
-    /* max-width: 60vw */
+    max-width: 50vw
+  }
+}
+
+@media (width < 550px) {
+  :root {
+    font-size: calc(0.5rem + 0.35vw);
+    --content-margin-left: 4rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  .content-section {
+    flex-direction: column;
+    margin-right: var(--content-margin-left);
+  }
+  .content-paragraph {
+    width: 100%;
+    max-width: none;
+    /* text-align: justify; */
+  }
+  .vertical-section {
+    padding-top: var(--primary-spacing);
   }
 }
 </style>

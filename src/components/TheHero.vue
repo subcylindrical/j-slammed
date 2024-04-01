@@ -121,4 +121,10 @@ p:nth-of-type(2) {
     text-align: center;
   }
 }
+
+@media (width < 550px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
 </style>

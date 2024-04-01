@@ -80,13 +80,6 @@ h2 {
   background-size: cover;
 }
 
-/* img {
-  width: 100%;
-  height: 100%;
-  flex-grow: 1;
-  object-fit: cover;
-} */
-
 .footer-content {
   padding: var(--content-margin-top) var(--content-margin-left);
 }
@@ -113,5 +106,18 @@ h2 {
   transform: translateX(0.5rem);
   color: var(--font-dark);
   font-style: italic;
+}
+
+@media (width < 550px) {
+  section {
+    flex-direction: column;
+  }
+  .img-wrapper {
+    width: 100%;
+    height: 35rem;
+  }
+  .contact-block {
+    row-gap: calc(var(--content-margin-left) / 3);
+  }
 }
 </style>

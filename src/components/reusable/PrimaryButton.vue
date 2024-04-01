@@ -57,7 +57,6 @@ export default {
 }
 
 button {
-  font-size: 17px;
   font-size: 1.44rem;
   font-weight: 700;
   letter-spacing: 1.25px;
@@ -77,5 +76,12 @@ button {
   transform: translate(5%, 10%);
   background-color: var(--button-shadow);
   z-index: -1;
+}
+
+@media (width < 550px) {
+  button {
+  }
+  .button-wrapper {
+  }
 }
 </style>

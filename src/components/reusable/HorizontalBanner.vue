@@ -12,4 +12,11 @@ div {
   text-align: center;
   color: var(--font-light);
 }
+
+@media (width < 550px) {
+  div {
+    padding: 7.64rem calc(var(--content-margin-left) / 2);
+    font-size: 2rem;
+  }
+}
 </style>

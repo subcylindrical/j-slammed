@@ -51,4 +51,10 @@ section > div {
   margin: 0 calc(var(--content-margin-left) / 2);
   padding-bottom: var(--section-bottom-padding);
 }
+
+@media (width < 550px) {
+  section > div {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

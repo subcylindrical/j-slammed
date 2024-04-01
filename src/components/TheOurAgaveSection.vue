@@ -35,4 +35,20 @@ export default {
 section {
   padding-bottom: var(--section-bottom-padding);
 }
+
+@media (width < 950px) {
+  .content-section {
+    margin-right: var(--content-margin-left);
+  }
+  .content-paragraph {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (width < 550px) {
+  section {
+    padding-bottom: calc(var(--section-bottom-padding) / 2);
+  }
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="timeline-content-container">
-      <h2>How we got here</h2>
+      <h2 class="one">How we got here</h2>
       <div
         class="tl-unit medium-font"
         v-for="time in timeline"
@@ -13,6 +13,10 @@
         </p>
       </div>
     </div>
+    <h2 class="two">
+      How we<br />
+      got here
+    </h2>
     <div class="timeline-img-container">
       <img src="../assets/images/hillside.webp" alt="" />
     </div>
@@ -147,5 +151,56 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+h1.two {
+  display: block;
+}
+h2.two {
+  display: none;
+}
+
+@media (width < 950px) {
+  .timeline-img-container {
+    width: 40%;
+  }
+  .tl-unit {
+    padding: 0 10px;
+  }
+}
+@media (width < 550px) {
+  h2.one {
+    display: none;
+  }
+  h2.two {
+    display: block;
+
+    margin-top: var(--primary-spacing);
+    margin-left: calc(var(--content-margin-left) / 2);
+    margin-bottom: 0;
+  }
+  .timeline-img-container {
+    height: 50rem;
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  section {
+    flex-direction: column-reverse;
+  }
+  .timeline-content-container {
+    flex-direction: row;
+    overflow: scroll;
+    width: auto;
+    padding-bottom: calc(var(--section-bottom-padding) / 2);
+    align-items: stretch;
+  }
+  .tl-unit {
+    min-width: 30rem;
+    flex-grow: 1;
+    background-color: var(--font-light);
+    padding: 3rem 1rem;
+    margin: 0 calc(var(--content-margin-left) / 2);
+    border-radius: var(--small-radius);
+  }
 }
 </style>
