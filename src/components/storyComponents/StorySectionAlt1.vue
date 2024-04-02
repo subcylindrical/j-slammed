@@ -47,4 +47,18 @@ img {
 p {
   text-align: center;
 }
+
+@media (width < 900px) {
+  .story-section {
+    padding: 0;
+  }
+  .story-content {
+    padding: 4rem 2rem;
+  }
+  p {
+    font-size: 2rem;
+    max-width: none;
+    text-align: justify;
+  }
+}
 </style>

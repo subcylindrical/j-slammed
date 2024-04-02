@@ -68,7 +68,7 @@ export default {
         },
       })
       .to(this.$refs.details, {
-        width: '90rem',
+        width: '65vw',
       });
 
     this.tl2 = gsap
@@ -141,5 +141,19 @@ h1 {
   font-weight: 400;
   font-style: italic;
   text-align: center;
+}
+
+@media (width < 900px) {
+  #image-container {
+    height: 50%;
+  }
+}
+@media (width < 550px) {
+  #image-container {
+    height: 50%;
+  }
+  .detail {
+    width: 40rem;
+  }
 }
 </style>

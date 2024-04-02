@@ -20,4 +20,22 @@ p {
   max-width: 55rem;
   text-align: justify;
 }
+
+@media (width < 1200px) {
+  p {
+    max-width: 45rem;
+    text-align: justify;
+  }
+}
+
+@media (width < 900px) {
+  .story-block {
+    align-self: center;
+    padding: 4rem 2rem;
+  }
+  p {
+    font-size: 2rem;
+    max-width: none;
+  }
+}
 </style>

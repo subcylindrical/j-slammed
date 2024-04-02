@@ -48,4 +48,23 @@ p {
   text-align: center;
   max-width: 55rem;
 }
+
+@media (width < 900px) {
+  img {
+    width: 100%;
+    border-top: none;
+  }
+  .story-section {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  .story-content {
+    padding: 4rem 2rem;
+  }
+  p {
+    font-size: 2rem;
+    max-width: none;
+    text-align: justify;
+  }
+}
 </style>

@@ -8,7 +8,9 @@
       <template v-slot:num>{{ story.number }}</template>
       {{ story.desc }}
     </story-block>
-    <img :src="story.img" alt="" ref="storyImg" />
+    <div class="img-wrapper">
+      <img :src="story.img" alt="" ref="storyImg" />
+    </div>
   </div>
 </template>
 
@@ -60,15 +62,51 @@ export default {
   flex-direction: row-reverse;
 }
 
-img {
-  /* max-width: calc(50% + 1px); */
+.img-wrapper {
   width: calc(50% + 1px);
+  border-left: var(--border-width) solid var(--section-border);
+  border-right: var(--border-width) solid var(--section-border);
+}
+
+img {
+  /* width: calc(50% + 1px); */
+  width: 100%;
   height: 120%; /* for parallax */
   object-position: center;
   position: relative;
   bottom: 20%;
   object-fit: cover;
-  border-left: var(--border-width) solid var(--section-border);
-  border-right: var(--border-width) solid var(--section-border);
+}
+@media (width < 900px) {
+  .img-wrapper {
+    min-width: calc(50% + 1px);
+    /* display: flex;
+    flex-direction: column; */
+  }
+  img {
+    height: 120%;
+    bottom: 20%;
+  }
+  .story-section {
+    height: auto;
+  }
+}
+
+@media (width < 550px) {
+  .story-section {
+    flex-direction: column-reverse;
+  }
+  .img-wrapper {
+    width: 100%;
+    overflow: clip;
+    border-bottom: var(--border-width) solid var(--section-border);
+  }
+  .story-section {
+    height: auto;
+  }
+  img {
+    height: 120%;
+    bottom: 20%;
+  }
 }
 </style>
