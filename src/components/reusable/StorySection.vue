@@ -80,8 +80,6 @@ img {
 @media (width < 900px) {
   .img-wrapper {
     min-width: calc(50% + 1px);
-    /* display: flex;
-    flex-direction: column; */
   }
   img {
     height: 120%;
@@ -105,7 +103,7 @@ img {
     height: auto;
   }
   img {
-    height: 120%;
+    height: 200%;
     bottom: 20%;
   }
 }
