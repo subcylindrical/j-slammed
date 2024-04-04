@@ -13,10 +13,7 @@
         </p>
       </div>
     </div>
-    <h2 class="two">
-      How we<br />
-      got here
-    </h2>
+    <h2 class="two">Our journey</h2>
     <div class="timeline-img-container">
       <img src="../assets/images/hillside.webp" alt="" />
     </div>
@@ -173,10 +170,10 @@ h2.two {
   }
   h2.two {
     display: block;
-
-    margin-top: var(--primary-spacing);
-    margin-left: calc(var(--content-margin-left) / 2);
+    margin-top: var(--content-margin-top);
+    /* margin-left: calc(var(--content-margin-left) / 2); */
     margin-bottom: 0;
+    text-align: center;
   }
   .timeline-img-container {
     height: 50rem;

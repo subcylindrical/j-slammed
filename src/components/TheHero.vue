@@ -107,6 +107,7 @@ p:nth-of-type(2) {
     padding-left: 10px;
     padding-right: 10px;
     place-self: start center;
+    padding-top: 40px;
   }
   p:nth-of-type(1) {
     grid-row: 3;

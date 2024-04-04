@@ -20,6 +20,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
+  props: ['isMobile'],
   data() {
     return {
       tl: null,
@@ -55,7 +56,7 @@ export default {
         }
       );
     loadTl.play();
-
+    console.log('isMobile: ', this.isMobile[0]);
     this.tl = gsap
       .timeline({
         scrollTrigger: {
@@ -68,7 +69,7 @@ export default {
         },
       })
       .to(this.$refs.details, {
-        width: '65vw',
+        width: this.isMobile[0] ? '90vw' : '90rem',
       });
 
     this.tl2 = gsap
@@ -152,8 +153,8 @@ h1 {
   #image-container {
     height: 50%;
   }
-  .detail {
-    width: 40rem;
+  .details {
+    width: 82vw;
   }
 }
 </style>

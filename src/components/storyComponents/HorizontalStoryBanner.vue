@@ -19,6 +19,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
+  inject: ['isMobile'],
   data() {
     return {
       tl: null,
@@ -37,7 +38,7 @@ export default {
         },
       })
       .to(this.$refs.bannerDetails, {
-        width: '90rem',
+        width: this.isMobile ? '90vw' : '90rem',
       });
   },
 };
@@ -54,6 +55,7 @@ export default {
   align-items: center;
   row-gap: 5rem;
   border-bottom: var(--border-width) solid var(--section-border);
+  overflow-x: clip;
 }
 
 .details {
@@ -78,5 +80,11 @@ p {
   font-size: 3.35rem;
   font-weight: 800;
   font-style: italic;
+}
+
+@media (width < 550px) {
+  .details {
+    width: 82vw;
+  }
 }
 </style>

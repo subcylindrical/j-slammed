@@ -4,15 +4,40 @@
       <number-badge theme="dark">{{ story.number }}</number-badge>
       <p>{{ story.desc }}</p>
     </div>
-    <img :src="story.img" alt="" />
+    <div class="img-wrapper" ref="imgWrapper">
+      <img :src="story.img" alt="" ref="storyImg" />
+    </div>
   </div>
 </template>
 
 <script>
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 export default {
+  inject: ['isMobile'],
   props: ['story'],
   data() {
-    return {};
+    return {
+      tl: null,
+    };
+  },
+  mounted() {
+    this.tl = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: this.$refs.imgWrapper,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+          ease: 'none',
+          markers: false,
+        },
+      })
+      .to(this.$refs.storyImg, {
+        y: '20%',
+      });
   },
 };
 </script>
@@ -27,12 +52,19 @@ export default {
   border-bottom: var(--border-width) solid var(--section-border);
 }
 
-img {
+.img-wrapper {
   width: 90rem;
-  height: auto;
-  object-fit: cover;
+  height: 60rem;
   overflow: clip;
   border: var(--border-width) solid var(--section-border);
+}
+
+img {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  position: relative;
+  bottom: 20%;
 }
 
 .story-content {
@@ -50,16 +82,20 @@ p {
 }
 
 @media (width < 900px) {
-  img {
+  .img-wrapper {
     width: 100%;
-    border-top: none;
+    height: 35rem;
+  }
+  img {
+    bottom: 22%;
   }
   .story-section {
-    padding: 0;
-    flex-direction: column-reverse;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    /* flex-direction: column-reverse; */
   }
   .story-content {
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
   }
   p {
     font-size: 2rem;

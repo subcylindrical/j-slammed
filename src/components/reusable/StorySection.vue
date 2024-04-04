@@ -98,13 +98,14 @@ img {
     width: 100%;
     overflow: clip;
     border-bottom: var(--border-width) solid var(--section-border);
+    height: 50rem;
   }
   .story-section {
     height: auto;
   }
   img {
-    height: 200%;
-    bottom: 20%;
+    height: 150%;
+    bottom: 30%;
   }
 }
 </style>

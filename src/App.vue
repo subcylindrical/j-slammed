@@ -202,7 +202,15 @@ h2 {
   h2 {
     font-size: 3.5rem;
   }
-
+  p,
+  li,
+  a {
+    font-size: 2rem;
+    line-height: 115%;
+  }
+  .sub-heading {
+    font-size: 2.1rem;
+  }
   .content-section {
     flex-direction: column;
     margin-right: var(--content-margin-left);
