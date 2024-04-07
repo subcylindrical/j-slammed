@@ -4,7 +4,7 @@
       <h2>What We Grow</h2>
       <p class="content-paragraph">
         In 2013, we planted our first Blue Americana Agave plants. Since then,
-        we have additionally planted Sotols (which are not avages but produce
+        we have additionally planted Sotols (which are not agaves but produce
         agave spirit and belong to the asparagus family) as well as Tequilana
         Agaves.
       </p>

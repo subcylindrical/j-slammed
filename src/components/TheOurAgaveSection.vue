@@ -4,7 +4,7 @@
       <h2>Our Agave Is Used For Agave Spirits</h2>
       <p class="content-paragraph">
         We cannot market our product as tequila because of the stringent
-        regulations established by the Consuelo Regulador del Tequila (CRT). The
+        regulations established by the Consejo Regulador del Tequila (CRT). The
         CRT ensures that tequila production strictly adheres to specific
         standards, defining it as a denomination of origin product. Tequila can
         only bear that designation if it is crafted in designated regions of
@@ -18,7 +18,9 @@
         produced from agave grown within the state and must not contain any
         flavoring or additives.
       </p>
-      <primary-button>See Bill AB2303</primary-button>
+      <secondary-button link="https://www.californiaagave.org"
+        >See Bill AB2303</secondary-button
+      >
     </div>
   </section>
 </template>

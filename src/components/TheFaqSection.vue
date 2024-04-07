@@ -94,7 +94,7 @@ export default {
         {
           question: 'Why can’t we market agave as Tequila?',
           answer:
-            'Consuelo Regulador del Tequila or CRT ensures that tequila production adheres to specific standards and that is defined as a denomination of origin product and can only be called tequila if it is produced in specific regions of Mexico like Los Altos- highlands of Jalisco. All these qualifications must be met to adhere to the Mexican govts regulations of fermentation, distillation, and aging process. Outside can use the same plant but must be referred to as an agave spirit. Bill AB2303- set highest quality possible standard for California agave spirits. Any agave spirits sold in California labeled with the words “California Agave Spirit” must be made from agave grown in the state and cannot contain any flavoring or additives.',
+            'El Consejo Regulador del Tequila, A.C. (CRT) ensures that tequila production adheres to specific standards and that is defined as a denomination of origin product and can only be called tequila if it is produced in specific regions of Mexico like Los Altos- highlands of Jalisco. All these qualifications must be met to adhere to the Mexican govts regulations of fermentation, distillation, and aging process. Outside can use the same plant but must be referred to as an agave spirit. Bill AB2303- set highest quality possible standard for California agave spirits. Any agave spirits sold in California labeled with the words “California Agave Spirit” must be made from agave grown in the state and cannot contain any flavoring or additives.',
         },
         {
           question:
@@ -112,7 +112,7 @@ export default {
           question:
             'How much does one plant weigh at harvest? With pencas or just the pina',
           answer:
-            'Average of weight of pina is 450 lbs. without the pencas and around 1000',
+            'Average of weight of the pina is 450 lbs, and with the pencas is around 1000',
         },
         {
           question:

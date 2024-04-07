@@ -4,6 +4,16 @@
       <h2>Contact</h2>
       <div class="contact-information">
         <div class="contact-block">
+          <p class="sub-heading">Joshua Tree Distilling</p>
+          <a
+            class="contact-info"
+            href="https://www.joshuatreedistillingco.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Website</a
+          >
+        </div>
+        <div class="contact-block">
           <p class="sub-heading">linkedin</p>
           <a
             class="contact-info"
@@ -95,7 +105,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin-top: var(--content-margin-left);
-  row-gap: calc(var(--content-margin-left));
+  row-gap: calc(var(--content-margin-left) / 2);
 }
 
 .contact-info {

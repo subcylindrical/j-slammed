@@ -11,7 +11,10 @@
         <div class="empty"></div>
         <div class="empty"></div>
         <div class="term-container">
-          <span class="sub-heading">Consuelo Regulador del Tequila (CRT)</span>
+          <span class="sub-heading"
+            >Consejo Regulador del Tequila, A.C. (CRT)<br />Tequila Regulatory
+            Council</span
+          >
           <p class="definition">
             Governing body or board that regulates tequila production
           </p>

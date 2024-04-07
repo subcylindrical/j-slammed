@@ -5,6 +5,7 @@ import TheStoryPage from './components/storyComponents/TheStoryPage.vue';
 import App from './App.vue';
 import NumberBadge from './components/reusable/NumberBadge.vue';
 import PrimaryButton from './components/reusable/PrimaryButton.vue';
+import SecondaryButton from './components/reusable/SecondaryButton.vue';
 import HorizontalBanner from './components/reusable/HorizontalBanner.vue';
 
 const router = createRouter({
@@ -22,6 +23,7 @@ const app = createApp(App);
 
 app.component('NumberBadge', NumberBadge);
 app.component('PrimaryButton', PrimaryButton);
+app.component('SecondaryButton', SecondaryButton);
 app.component('HorizontalBanner', HorizontalBanner);
 
 app.use(router);

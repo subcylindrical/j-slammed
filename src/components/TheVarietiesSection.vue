@@ -30,7 +30,7 @@ export default {
           image: require('../assets/images/americana.webp'),
           type: 'Blue americana agave',
           description:
-            'Blue Americana agave is known for its spiky and robust blue-green leaves. This agave species is notably cultivated in Mexico for the production of tequila. In California, this agave is used to produce agave spirits.',
+            ' Blue Americana agave is known for its spiky and robust blue-green leaves. This agave species is notably cultivated in Mexico for the production of Mezcal. In California, this agave and other agaves species is used produce agave spirits.',
         },
         {
           image: require('../assets/images/tequilana.webp'),
