@@ -54,6 +54,16 @@
             >j_slammed</a
           >
         </div>
+        <div class="contact-block">
+          <p class="sub-heading">Agave Council</p>
+          <a
+            class="contact-info"
+            href="https://www.californiaagave.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Website</a
+          >
+        </div>
       </div>
     </div>
     <div class="img-wrapper"></div>
@@ -104,7 +114,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: var(--content-margin-left);
+  margin-top: calc(var(--content-margin-left) / 2);
   row-gap: calc(var(--content-margin-left) / 2);
 }
 

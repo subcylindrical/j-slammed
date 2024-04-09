@@ -78,7 +78,11 @@ export default {
             'Americana’s specific- a large succulent with a rosette of thick, fleshy leaves that are broad at the base and taper to a point, featuring a pale green to blue-green color. The margins of the leaves have regularly spaced teeth, which are often sharp, and each leaf typically culminates in a sharp terminal spine. About 6 ft in diameter when mature.',
         },
         { question: 'What is the big ball in the middle?', answer: 'pina' },
-        { question: 'How do you harvest an agave plant?', answer: '' },
+        {
+          question: 'How do you harvest an agave plant?',
+          answer:
+            'There are various methods of harvesting that are dependent on size and location of an agave but they generally rely on removing most pencas for easier transportation and subsequent cooking processes. Some are removed by hand and others with mechanical assistance',
+        },
         {
           question:
             'How long do they live, and do you have to start from seed after harvest?',
